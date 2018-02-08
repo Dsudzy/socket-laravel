@@ -1,0 +1,108 @@
+// Variables
+@import "variables";
+@import "foundation";
+@import "fonts";
+@include foundation-everything;
+
+#app {
+    height: 100%;
+}
+
+.register-options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.register {
+    font-size: 30px;
+}
+
+.register-section {
+    display: flex;
+    height: 100%;
+    .row{
+        align-self: center;
+        width: 600px;
+    }
+}
+
+nav {
+    background-color: #5F5E5D;
+    color: white;
+    .header-top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        h1 {
+            font-weight: bold;
+        }
+        .login {
+            display: flex;
+            flex-flow: row nowrap;
+            position: absolute;
+            right: 0;
+            p {
+                padding: 1rem;
+            }
+            a {
+                color: #FFF;
+                font-weight: bold;
+                &:hover {
+                    color: #CCC;
+                }
+            }
+        }
+    }
+    .header-body {
+        background-color: #8E8E8B;
+        .header-body-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            a {
+                color: #FFF;
+            }
+            button {
+                width: 147px;
+                height: 40px;
+                margin-top: 5px;
+                font-size: 17px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .search {
+                margin-top: 5px;
+                width: 500px;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+    }
+    
+}
+
+.login-container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .form {
+        width: 300px;
+        margin: 3rem;
+    }
+    .logo {
+        margin-bottom: 5rem;
+    }
+}
